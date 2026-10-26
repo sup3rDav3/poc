@@ -12,7 +12,7 @@
 <script>
 
     //Change to your command
-    var result = AndroidBridge.getTime("id;whoami");
+    var result = AndroidBridge.getTime("id");
     var lines = result.split('\n');
     var command = lines[0];
     var fullMessage = "Output: " + command;
